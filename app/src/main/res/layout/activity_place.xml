@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.le.help_child.activity.PlaceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/title_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国失踪儿童互助系统"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <com.amap.api.maps2d.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/title_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国失踪儿童互助系统"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/title_place"
+        android:background="#a07789ae"
+        android:minWidth="120dip"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+
+        <RadioButton
+            android:id="@+id/RadioWeek"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:checked="true"
+            android:text="最近一月"
+            android:textColor="#fff5f5f5"
+            android:textSize="16sp" />
+
+        <!-- android:visibility="gone" -->
+
+        <RadioButton
+            android:id="@+id/RadioMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:text="最近三月"
+            android:textColor="#fff5f5f5"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/RadioYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:text="所有数据"
+            android:textColor="#fff5f5f5"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="40dp"
+        android:background="#8fffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_gps"
+        android:layout_height="40dp" />
+    <LinearLayout
+        android:layout_width="40dp"
+        android:orientation="horizontal"
+        android:layout_above="@id/iv_location"
+        android:layout_marginLeft="10dp"
+        android:background="#8fffffff"
+        android:gravity="center_vertical"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_go_site"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/btn_two"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_go_day"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/btn_one"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

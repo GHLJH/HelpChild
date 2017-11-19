@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="title_blue">#AEEEEE</color>
+    <color name="bottom_color">#9fc0eb</color>
+    <color name="tab_selected_bg">#C4E1E1</color>
+    <color name="timeview">#ffffff</color>
+    <color name="black">#1A1A1A</color>
+    <color name="black_1">#CCCCCC</color>
+    <color name="bg">#D1EEEE</color>
+    <color name="pink">#e460cd</color>
+    <color name="pink_tiny">#f180dd</color>
+    <color name="inputData">#9fc0eb</color>
+    <color name="base_color_666">#666666</color>
+    <color name="base_color_999">#999999</color>
+    <drawable name="pressed_color">#D4D4D4</drawable>
+    <drawable name="show_color">#FFFFF0</drawable>
+</resources>

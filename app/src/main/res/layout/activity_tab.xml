@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.le.help_child.activity.TabActivity">
+
+    <!--suppress CheckTagEmptyBody -->
+    <FrameLayout
+        android:id="@+id/tab_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabs_rg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title_text" />
+
+    <RadioGroup
+        android:id="@+id/tabs_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/inputData"
+        android:orientation="horizontal"
+        android:paddingBottom="2sp"
+        android:paddingTop="5sp">
+
+        <RadioButton
+            android:id="@+id/bottom_camera"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_camera"
+            android:button="@null"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/bottom_record"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_record"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/bottom_place"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_place"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/bottom_help"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_help"
+            android:button="@null" />
+
+    </RadioGroup>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.le.help_child.activity.MyRecordActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="我的登记"
+        android:id="@+id/tre"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:background="@color/pink_tiny"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LV_myRecord"
+        android:listSelector="@drawable/ru_list_selector"
+        android:divider="@color/black"
+        android:dividerHeight="1px"
+        android:layout_below="@+id/tre"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

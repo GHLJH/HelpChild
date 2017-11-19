@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:le="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slide_background"
+    tools:context="com.le.help_child.MainActivity">
+
+    <com.le.help_child.view.SlidingMenu
+        android:id="@+id/id_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        le:rightPadding="80dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <include layout="@layout/my_menu" />
+
+            <include layout="@layout/main_right" />
+        </LinearLayout>
+    </com.le.help_child.view.SlidingMenu>
+</RelativeLayout>

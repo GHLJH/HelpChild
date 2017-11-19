@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/log_in_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9fc0eb">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="特征信息"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="#000000" />
+
+    <EditText
+        android:id="@+id/edt_feature"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:gravity="left|top"
+        android:hint="请输入遗失人员的体貌特征... ..."
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:minLines="4"
+        android:textColorHint="@color/black_1" />
+
+    <Button
+        android:id="@+id/btn_feature"
+        android:layout_width="wrap_content"
+        android:layout_height="31sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:background="#9fc0eb"
+        android:text="确定" />
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.le.help_child.activity.MyUploadActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="我的上传"
+        android:id="@+id/tup"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:background="@color/pink_tiny"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LV_myupload"
+        android:listSelector="@drawable/ru_list_selector"
+        android:divider="@color/black"
+        android:dividerHeight="1px"
+        android:layout_below="@+id/tup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
